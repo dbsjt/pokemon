@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const PokemonDetailPage = async ({ params }: { params: { id: string } }) => {
   const pokemon = await fetchPokemonData(params.id);
-  console.log("pokemon: ", pokemon);
+
   return (
     <div className="pokemon-details max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="bg-gray-100 text-gray-800 text-center p-4">
